@@ -2,7 +2,7 @@
 function getAllDirectors(movies) {
   let directors = movies.map(movie=>movie.director);
 
-  console.log("EXERCICE 1 ->", directors);
+ // console.log("EXERCICE 1 ->", directors);
   return directors;
 }
 
@@ -11,7 +11,7 @@ function getMoviesFromDirector(movies, director) {
  
   let myDirector = movies.filter(movie => movie.director === director);
 
-  console.log("EXERCICE 2 ->", myDirector)
+ // console.log("EXERCICE 2 ->", myDirector)
     return(myDirector);
 }
 
@@ -20,7 +20,7 @@ function moviesAverageOfDirector(movies, director) {
   const myDirector = getMoviesFromDirector(movies, director)
   const sumScore = myDirector.reduce((acumulador, movie) => acumulador += movie.score, 0);
   const averageScore = Number(sumScore/myDirector.length);
-  console.log("EXERCICE 3 ->", averageScore);
+ // console.log("EXERCICE 3 ->", averageScore);
   return (averageScore);
 }
 
@@ -28,7 +28,7 @@ function moviesAverageOfDirector(movies, director) {
 function orderAlphabetically(movies) {
   const movieTitles = movies.map(movie => movie.title);
   movieTitles.sort(); 
-  console.log("EXERCICE 4 ->", movieTitles) 
+ // console.log("EXERCICE 4 ->", movieTitles) 
   return movieTitles.slice(0, 20); 
 }
 
@@ -40,7 +40,7 @@ function orderByYear(moviesArr) {
     }
     return a.year - b.year; // Ordena por año de forma ascendente
   });
-  console.log("EXERCICE 5 ->", sortedMovies)
+ // console.log("EXERCICE 5 ->", sortedMovies)
   return sortedMovies;
 }
 
