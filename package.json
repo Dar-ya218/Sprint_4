@@ -36,6 +36,8 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "browserify": "^17.0.0"
+    "browserify": "^17.0.0",
+    "runner": "^4.0.1",
+    "test": "^3.3.0"
   }
 }
