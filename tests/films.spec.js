@@ -107,6 +107,10 @@ describe('Function "moviesAverageOfDirector"', () => {
     expect(typeof moviesAverageOfDirector(movies, 'Stanley Kubrick')).toBe('number');
   });
 
+  it('should be different from NaN', () => {
+    expect(moviesAverageOfDirector(movies, 'Stanley Kubrick')).not.toBeNaN();
+  });
+  
   it(' should return the average score of movies selecting only the director films. With 2 decimals! ', () => {
     expect(moviesAverageOfDirector([
       {
@@ -294,6 +298,10 @@ describe('Function "moviesAverageByCategory"', () => {
 
   it('should return a number', () => {
     expect(typeof moviesAverageByCategory(movies, 'Drama')).toBe('number');
+  });
+  
+  it('should be different from NaN', () => {
+    expect(moviesAverageByCategory(movies, 'Drama')).not.toBeNaN();
   });
 
   it(' should return the average score of 2 movies with score 7 each', () => {
